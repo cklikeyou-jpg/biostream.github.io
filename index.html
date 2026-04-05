@@ -346,77 +346,8 @@
           <h3 class="text-2xl font-bold mb-6 text-dark">NEP 위험성과 MAT의 역할</h3>
           <div class="space-y-4">
             <div class="bg-gray-50 rounded-xl p-5">
-              <h4 class="font-semibold text-dark mb-3">🔬 TLR 신호전달 메커니즘</h4>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">내독소(LPS)는 TLR4, 그람양성균 유래 물질(LTA, Peptidoglycan)은 TLR2, 바이러스 dsRNA는 TLR3를 통해 각각 단핵구를 활성화합니다. MAT는 이 다양한 TLR 경로를 모두 커버합니다.</p>
-              <div class="overflow-x-auto rounded-lg border border-gray-200">
-                <table class="w-full text-xs text-left">
-                  <thead>
-                    <tr class="bg-slate-800 text-white">
-                      <th class="px-3 py-2.5 font-semibold whitespace-nowrap">TLR 종류</th>
-                      <th class="px-3 py-2.5 font-semibold">주요 리간드 (Ligand)</th>
-                      <th class="px-3 py-2.5 font-semibold">유래 및 특징</th>
-                      <th class="px-3 py-2.5 font-semibold whitespace-nowrap">세포 내 위치</th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-100">
-                    <tr class="bg-white hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-primary whitespace-nowrap">TLR1 / TLR2</td>
-                      <td class="px-3 py-2 text-gray-700">트리아실 지질단백질 (Triacyl lipopeptides)</td>
-                      <td class="px-3 py-2 text-gray-600">세균 (Bacteria)</td>
-                      <td class="px-3 py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">세포 표면</span></td>
-                    </tr>
-                    <tr class="bg-gray-50 hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-primary whitespace-nowrap">TLR2 / TLR6</td>
-                      <td class="px-3 py-2 text-gray-700">디아실 지질단백질 (Diacyl lipopeptides), 자이모산 (Zymosan)</td>
-                      <td class="px-3 py-2 text-gray-600">세균, 효모 (Fungi)</td>
-                      <td class="px-3 py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">세포 표면</span></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-purple-600 whitespace-nowrap">TLR3</td>
-                      <td class="px-3 py-2 text-gray-700">이중가닥 RNA (dsRNA)</td>
-                      <td class="px-3 py-2 text-gray-600">바이러스 (Virus)</td>
-                      <td class="px-3 py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">엔도솜 (내부)</span></td>
-                    </tr>
-                    <tr class="bg-amber-50 hover:bg-amber-100 transition">
-                      <td class="px-3 py-2 font-bold text-amber-700 whitespace-nowrap">TLR4 ⭐</td>
-                      <td class="px-3 py-2 text-gray-700 font-semibold">LPS (Lipopolysaccharide)</td>
-                      <td class="px-3 py-2 text-gray-600">그람 음성균 (Gram-negative)</td>
-                      <td class="px-3 py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">세포 표면</span></td>
-                    </tr>
-                    <tr class="bg-gray-50 hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-primary whitespace-nowrap">TLR5</td>
-                      <td class="px-3 py-2 text-gray-700">플라젤린 (Flagellin)</td>
-                      <td class="px-3 py-2 text-gray-600">세균의 편모</td>
-                      <td class="px-3 py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">세포 표면</span></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-purple-600 whitespace-nowrap">TLR7 / TLR8</td>
-                      <td class="px-3 py-2 text-gray-700">단일가닥 RNA (ssRNA)</td>
-                      <td class="px-3 py-2 text-gray-600">바이러스 (Virus)</td>
-                      <td class="px-3 py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">엔도솜 (내부)</span></td>
-                    </tr>
-                    <tr class="bg-gray-50 hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-purple-600 whitespace-nowrap">TLR9</td>
-                      <td class="px-3 py-2 text-gray-700">CpG DNA (비메틸화)</td>
-                      <td class="px-3 py-2 text-gray-600">세균 및 바이러스 DNA</td>
-                      <td class="px-3 py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">엔도솜 (내부)</span></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-gray-400 whitespace-nowrap">TLR10</td>
-                      <td class="px-3 py-2 text-gray-500 italic">미정 (Unknown)</td>
-                      <td class="px-3 py-2 text-gray-500">인간에게 존재, 억제 기능 추정</td>
-                      <td class="px-3 py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">세포 표면</span></td>
-                    </tr>
-                    <tr class="bg-gray-50 hover:bg-blue-50 transition">
-                      <td class="px-3 py-2 font-bold text-primary whitespace-nowrap">TLR11 / TLR12</td>
-                      <td class="px-3 py-2 text-gray-700">프로필린 (Profilin)</td>
-                      <td class="px-3 py-2 text-gray-600">기생충 (<em>Toxoplasma gondii</em>)</td>
-                      <td class="px-3 py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">세포 표면</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p class="text-xs text-gray-400 mt-2">⭐ TLR4(LPS)는 MAT의 핵심 감지 경로 — BET/LAL은 LPS만 감지하나 MAT는 TLR2·3·4·5·7·8·9 전 경로를 커버합니다.</p>
+              <h4 class="font-semibold text-dark mb-2">🔬 TLR 신호전달 메커니즘</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">내독소(LPS)는 TLR4, 그람양성균 유래 물질(LTA, Peptidoglycan)은 TLR2, 바이러스 dsRNA는 TLR3를 통해 각각 단핵구를 활성화합니다. MAT는 이 다양한 TLR 경로를 모두 커버합니다.</p>
             </div>
             <div class="bg-gray-50 rounded-xl p-5">
               <h4 class="font-semibold text-dark mb-2">⚠️ NEP가 특히 문제가 되는 제품군</h4>
